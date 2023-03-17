@@ -1,8 +1,11 @@
 /* Cabecero*/
+
+#bg-body {
+  background-color: #dac1a1;
+}
 .container {
   height: 100vh;
   width: 100%;
-  background-color: #dac1a1;
 }
 .top-case {
   height: 30%;
@@ -12,86 +15,138 @@
 }
 .imageLogo {
   height: 90%;
-  width: 70%;
+  width: 80%;
 }
 .main-case {
-  background-color: red;
   height: 88%;
   width: 100%;
 }
 
 /* Modos de jugador */
 
-h1 {
-  font-size: 45px;
-  font-family: "Comfortaa", cursive;
-  font-family: "Comic Neue", cursive;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Teko", sans-serif;
-  text-align: center;
-  background-color: #dac1a1af;
-  border-radius: 30%;
-  width: 80%;
-  height: 8%;
-}
-h2 {
-  font-size: 35px;
-  font-family: "Comfortaa", cursive;
-  font-family: "Comic Neue", cursive;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Teko", sans-serif;
-  text-align: center;
-}
-.text-info {
-  font-size: 25px;
-  font-family: "Comfortaa", cursive;
-  font-family: "Comic Neue", cursive;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Teko", sans-serif;
-}
-.players {
+.players,
+.rules {
   background-color: #9e733d;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-content: flex-start;
   flex-wrap: wrap;
+  border-radius: 5%;
+  margin-bottom: 5%;
 }
-
-/* Instrucciones de juego */
-
-.rules {
-  background-color: blue;
-  height: 100%;
+.instructions {
   width: 100%;
+  height: 20%;
+
+  display: flex;
+  justify-content: center;
+}
+.player-mod {
+  width: 100%;
+  height: 35%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+.main-title {
+  font-size: 6vh;
+  font-family: "Comfortaa", cursive;
+  font-family: "Comic Neue", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Teko", sans-serif;
+  text-align: center;
+  align-content: center;
+  background-color: #dac1a1af;
+  border-radius: 30%;
+  padding: 2vh;
+}
+.second-title {
+  font-size: 5vh;
+  font-family: "Comfortaa", cursive;
+  font-family: "Comic Neue", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Teko", sans-serif;
+  text-align: center;
+  color: #dac1a1;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-content: center;
+}
+.text-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0px;
+
+  margin: 0;
+  position: relative;
+  top: 1vh;
+}
+
+.text-info {
+  font-size: 3.5vh;
+  font-family: "Comfortaa", cursive;
+  font-family: "Comic Neue", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Teko", sans-serif;
+  padding: 4%;
+  text-align: center;
+}
+
+/* Instrucciones de juego */
+.flag-box {
+  width: 45%;
+  height: 25%;
+  margin-bottom: 5%;
+}
+
+.flag-img {
+  width: 100%;
+  height: 100%;
+}
+
 /* Contenedor barco */
 
 .boat-case {
-  background-color: yellow;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: end;
+  align-items: flex-end;
+  background-color: #dac1a1;
 }
 .boat-img {
-  height: 100%;
-  width: 80%;
+  height: 80%;
+  width: 70%;
+  margin-bottom: 10%;
 }
 .play-bot {
   align-self: flex-start;
-  width: 25%;
+  width: 60%;
   height: 10%;
-  font-size: 40px;
+  font-size: 4vh;
   background-color: #dac1a1af;
   border-radius: 40%;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+  position: relative;
+  top: 8%;
+  left: 15%;
+  padding: 3%;
+}
+
+/* ajustes responsive tablet */
+@media (min-width: 768px) {
+  .flag-box {
+    width: 50%;
+    height: 35%;
+    margin-bottom: 10%;
+  }
+}
+
+/* página web */
+.my-container {
+  
 }

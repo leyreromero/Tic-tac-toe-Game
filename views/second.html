@@ -5,24 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Comic+Neue&family=Montserrat:ital,wght@0,300;1,500;1,700&family=Teko&display=swap"
+      rel="stylesheet"
+    />
     <title>Tic Tac Toe</title>
   </head>
-  <body>
+  <body id="bg-body">
     <!--Contenedor principal-->
-    <div class="container">
+    <div class="container my-container">
+      <img src="../images/mar.png" alt="mar" class="ocean-img" />
       <!--Cabecero-->
       <div class="top-case">
         <img src="./images/logo.png" class="imageLogo" />
       </div>
       <!--Estructura juego-->
       <div class="main-case">
-        <div class="play-board">
-          <div class="body-board"></div>
+        <div class="players">
+          <div class="instructions">
+            <h1 class="main-title">PLAYERS INSTRUCTIONS</h1>
+          </div>
+          <div class="player-mod">
+            <h2 class="second-title">PLAYER VS PLAYER</h2>
+            <div class="text-info">
+              <p>
+                On player vs player you will be competing against your friends,
+                write your names and start playing!
+              </p>
+            </div>
+          </div>
+          <div class="player-mod">
+            <h2 class="second-title">PLAYER VS PC</h2>
+            <div>
+              <p class="text-info">
+                On player vs PC you will be playing against a computer. Are you
+                ready?
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="start">
-          <button></button>
+
+        <div class="rules">
+          <h1 class="main-title">GAME INFO</h1>
+          <div class="text-box">
+            <h2 class="second-title">Welcome to Pirates of the TIC TAC TOE.</h2>
+            <p class="text-info">
+              Each player will choose a team to make their move. Making only one
+              move per turn. The one who manages to make a line be it vertical,
+              horizontal or diagonal wins.
+            </p>
+            <div class="flag-box">
+              <img src="./images/piratabandera.png" alt="" class="flag-img" />
+            </div>
+          </div>
         </div>
-        <div class="players"></div>
+        <div class="boat-case">
+          <button class="play-bot">PLAY</button>
+          <img src="./images/barco.png" alt="pirate ship" class="boat-img" />
+        </div>
       </div>
     </div>
     <script src="./js/main.js"></script>
