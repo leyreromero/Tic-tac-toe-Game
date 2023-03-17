@@ -36,6 +36,9 @@
   flex-wrap: wrap;
   border-radius: 5%;
   margin-bottom: 5%;
+  background-image: url(../images/arena.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .instructions {
   width: 100%;
@@ -58,6 +61,7 @@
   font-family: "Comic Neue", cursive;
   font-family: "Montserrat", sans-serif;
   font-family: "Teko", sans-serif;
+  font-weight: bolder;
   text-align: center;
   align-content: center;
   background-color: #dac1a1af;
@@ -70,31 +74,41 @@
   font-family: "Comic Neue", cursive;
   font-family: "Montserrat", sans-serif;
   font-family: "Teko", sans-serif;
+  font-weight: bolder;
   text-align: center;
-  color: #dac1a1;
+  color: #624827;
   margin-top: 0;
   margin-bottom: 0;
   align-content: center;
+  background-color: #dac1a169;
+  border-radius: 30%;
+  padding: 2vh;
 }
 .text-box {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 0px;
-
+  background-color: #dac1a169;
+  border-radius: 30%;
+  padding: 2vh;
   margin: 0;
   position: relative;
   top: 1vh;
 }
 
 .text-info {
-  font-size: 3.5vh;
+  font-size: 4vh;
   font-family: "Comfortaa", cursive;
   font-family: "Comic Neue", cursive;
   font-family: "Montserrat", sans-serif;
   font-family: "Teko", sans-serif;
+  font-weight: bolder;
   padding: 4%;
   text-align: center;
+  background-color: #dac1a169;
+  border-radius: 20%;
+  padding: 2vh;
 }
 
 /* Instrucciones de juego */
@@ -160,26 +174,23 @@
     margin-left: 15px;
     margin-right: 15px;
   }
-  .players {
-    border: 4px solid rgba(0, 0, 0, 0.493);
-  }
+
   .rules {
     background-color: #dac1a1;
+    background-image: none;
   }
   #rules-title {
     background-color: #9e733d;
     color: #dac1a1;
   }
-  #rules-second {
-    color: #9e733d;
-  }
+
   .boat-case {
     background-color: #9e733d;
     border-radius: 5%;
-    border: 4px solid rgba(0, 0, 0, 0.493);
+    background-image: url(../images/arena.png);
   }
   .flag-box {
-    width: 45%;
+    width: 80%;
     height: 25%;
     margin-bottom: 5%;
   }
