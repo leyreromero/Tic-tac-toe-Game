@@ -49,9 +49,7 @@
         <div class="rules">
           <h1 class="main-title" id="rules-title">GAME INFO</h1>
           <div class="text-box">
-            <h2 class="second-title" >
-              Welcome to Pirates of the TIC TAC TOE.
-            </h2>
+            <h2 class="second-title">Welcome to Pirates of the TIC TAC TOE.</h2>
             <p class="text-info" id="text-media">
               Each player will choose a team to make their move. Making only one
               move per turn. The one who manages to make a line be it vertical,
@@ -63,8 +61,71 @@
           </div>
         </div>
         <div class="boat-case">
-          <button href="./views/second.html" class="play-bot">PLAY</button>
+          <button class="play-bot" id="but-play">PLAY</button>
           <img src="./images/barco.png" alt="pirate ship" class="boat-img" />
+        </div>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal-play" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="pl-pc">
+            <h1 class="main-title">SELECT A MODE</h1>
+            <div class="characters-img">
+              <p class="text-info">PLAYER 1</p>
+              <div class="char-container">
+                <img src="/images/pc.png" alt="pc" class="img-container" />
+                <img
+                  src="/images/jack-sparrow.png"
+                  alt="jack"
+                  class="img-container"
+                />
+                <img
+                  src="/images/elisabeth.png"
+                  alt="elisabeth"
+                  class="img-container"
+                />
+                <img
+                  src="/images/davy-jones.png"
+                  alt="davy"
+                  class="img-container"
+                />
+                <img
+                  src="/images/will-turner.png"
+                  alt="will"
+                  class="img-container"
+                />
+              </div>
+              <div class="characters-img">
+                <p class="text-info">PLAYER 2</p>
+                <div class="char-container">
+                  <img src="/images/pc.png" alt="pc" class="img-container" />
+                  <img
+                    src="/images/jack-sparrow.png"
+                    alt="jack"
+                    class="img-container"
+                  />
+                  <img
+                    src="/images/elisabeth.png"
+                    alt="elisabeth"
+                    class="img-container"
+                  />
+                  <img
+                    src="/images/davy-jones.png"
+                    alt="davy"
+                    class="img-container"
+                  />
+                  <img
+                    src="/images/will-turner.png"
+                    alt="will"
+                    class="img-container"
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="go-bot" id="but-go">GO!</button>
+          </div>
         </div>
       </div>
     </div>

@@ -52,7 +52,6 @@
   height: 35%;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .main-title {
@@ -77,7 +76,6 @@
   font-weight: bolder;
   text-align: center;
   color: #624827;
-  margin-top: 0;
   margin-bottom: 0;
   align-content: center;
   background-color: #dac1a169;
@@ -104,7 +102,7 @@
   font-family: "Montserrat", sans-serif;
   font-family: "Teko", sans-serif;
   font-weight: bolder;
-  padding: 4%;
+
   text-align: center;
   background-color: #dac1a169;
   border-radius: 20%;
@@ -114,7 +112,7 @@
 /* Instrucciones de juego */
 .flag-box {
   width: 45%;
-  height: 25%;
+  height: 15%;
   margin-bottom: 5%;
 }
 
@@ -153,12 +151,89 @@
   padding: 3%;
 }
 
+/* modal box */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #9e733d;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pl-pc {
+  height: 100%;
+  width: 100%;
+}
+
+.characters-img {
+  height: 100%;
+  width: 100%;
+}
+.char-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.img-container {
+  height: 15%;
+  width: 15%;
+  border: 2px solid black;
+}
+
+.go-bot {
+  width: 25%;
+  height: 8%;
+  font-size: 3vh;
+  font-weight: 700;
+  background-color: #dac1a1af;
+  border-radius: 20%;
+  position: relative;
+  right: -115px;
+  top: 10px;
+  margin-bottom: 10px;
+}
+
 /* ajustes responsive tablet */
 @media (min-width: 768px) {
   .flag-box {
-    width: 50%;
-    height: 35%;
+    width: 35%;
+    height: 25%;
     margin-bottom: 10%;
+  }
+
+  .go-bot {
+    right: -245px;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 998px) {
@@ -200,8 +275,8 @@
     position: absolute;
     top: -70px;
   }
-}
 
-/* página web */
-.my-container {
+  .go-bot {
+    right: -380px;
+  }
 }
