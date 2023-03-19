@@ -222,7 +222,71 @@
   top: 10px;
   margin-bottom: 10px;
 }
+/* pantalla juego */
+.my-container {
+  background-image: url(/images/peakpx.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
 
+.player-1,
+.player-2 {
+  width: 100%;
+  height: 100%;
+}
+.player-2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.text-player {
+  font-size: 6vh;
+  font-family: "Comfortaa", cursive;
+  font-family: "Comic Neue", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Teko", sans-serif;
+  font-weight: bolder;
+
+  text-align: center;
+  background-color: #dac1a169;
+  border-radius: 20%;
+  padding: 2vh;
+}
+#case-2 {
+  margin: 0;
+}
+.case-1 {
+  width: 100%;
+  height: 100%;
+}
+.board {
+  width: 100%;
+  height: 100%;
+
+  margin-top: 20px;
+}
+
+.fila {
+  width: 100%;
+  height: 50%;
+  margin-bottom: -20px;
+
+  display: flex;
+  justify-content: center;
+}
+.col-board {
+  width: 30%;
+  height: 75%;
+  margin: 15px;
+  background-color: #dac1a169;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.moneda {
+  height: 60%;
+  width: 90%;
+}
 /* ajustes responsive tablet */
 @media (min-width: 768px) {
   .flag-box {
@@ -278,5 +342,10 @@
 
   .go-bot {
     right: -380px;
+  }
+  .my-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
   }
 }
