@@ -119,6 +119,7 @@
 .flag-img {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 /* Contenedor barco */
@@ -322,6 +323,18 @@
 
 .gif-2 {
   width: 99%;
+}
+.but-2 {
+  display: flex;
+  justify-content: center;
+}
+.but2-style {
+  width: 60%;
+  height: 10%;
+  font-size: 3.5vh;
+  font-weight: 700;
+  background-color: #ffffffaf;
+  border-radius: 10%;
 }
 /* ajustes responsive tablet */
 @media (min-width: 768px) {
