@@ -22,7 +22,6 @@ To start playing the game you have to start reading the steps to follow on the m
 
 To preview the demo <a href="https://leyreromero.github.io/tic-tac-toe/" > tap here </a>.
 
-Some screenshoots:
 <img src="./images/capt1.png" alt="preview console" width="300" heigth="500">
 <img src="./images/capt2.png"  alt="preview console started" width="300" heigth="500">
 <img src="./images/capt3.png"  alt="preview console started" width="300" heigth="500">
