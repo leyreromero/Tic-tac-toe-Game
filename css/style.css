@@ -211,6 +211,10 @@
   border: 2px solid black;
 }
 
+.img-container:hover {
+  border: 2px solid white;
+}
+
 .go-bot {
   width: 25%;
   height: 8%;
@@ -247,7 +251,7 @@
   font-family: "Montserrat", sans-serif;
   font-family: "Teko", sans-serif;
   font-weight: bolder;
-
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.593);
   text-align: center;
   background-color: #dac1a169;
   border-radius: 20%;
@@ -283,6 +287,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.col-board:hover {
+  border: 2px solid #dac1a1;
 }
 .moneda {
   height: 60%;
