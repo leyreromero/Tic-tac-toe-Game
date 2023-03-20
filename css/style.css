@@ -119,7 +119,7 @@
 .flag-img {
   width: 100%;
   height: 100%;
-  position: relative;
+  display: none;
 }
 
 /* Contenedor barco */
@@ -339,11 +339,13 @@
 /* ajustes responsive tablet */
 @media (min-width: 768px) {
   .flag-box {
-    width: 35%;
-    height: 25%;
+    width: 25%;
+    height: 20%;
     margin-bottom: 10%;
   }
-
+  .flag-img {
+    display: block;
+  }
   .go-bot {
     right: -245px;
     margin-bottom: 40px;
@@ -383,18 +385,33 @@
     margin-bottom: 5%;
   }
   .imageLogo {
-    height: 60%;
-    width: 70%;
+    height: 40%;
+    width: 50%;
     position: absolute;
-    top: -70px;
+    top: -50px;
   }
 
   .go-bot {
     right: -380px;
   }
-  .my-container {
+  .case-1 {
     display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
+    height: 100vh;
+  }
+  .fila {
+    height: 25%;
+    position: relative;
+    bottom: -160px;
+  }
+  .player-1 {
+    position: relative;
+    bottom: -180px;
+  }
+  .player-2 {
+    position: relative;
+    bottom: -150px;
+  }
+  .text-player {
+    font-size: 7vh;
   }
 }
