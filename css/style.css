@@ -293,48 +293,64 @@
 .my-container2 {
   width: 100%;
   height: 100vh;
-  background-color: rgb(184 239 231);
+  background-image: url(../images/6792-piratas-del-caribe.jpg);
+  background-size: cover;
+  background-position-x: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container-pl1 {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(184 239 231);
-  border: 3px solid black;
+  width: 90%;
+  height: 90%;
+
+  border: 3px solid #dac1a1;
 }
 .winner {
   width: 100%;
   height: 20%;
 }
 .winner-title {
-  font-size: 6vh;
+  font-size: 7vh;
   font-family: "Comfortaa", cursive;
   font-family: "Comic Neue", cursive;
   font-family: "Montserrat", sans-serif;
   font-family: "Teko", sans-serif;
   font-weight: bolder;
-
+  color: #dac1a1;
+  text-shadow: 5px 5px 5px black;
   text-align: center;
 }
-.gif-loser {
-  width: 100%;
-  height: 40%;
-  background-size: cover;
+
+#position-pl1 {
+  position: relative;
+  bottom: -40px;
 }
 
-.gif-2 {
-  width: 99%;
+#position-pl2 {
+  position: relative;
+  bottom: -220px;
 }
 .but-2 {
   display: flex;
   justify-content: center;
+  position: relative;
+  bottom: -200px;
 }
 .but2-style {
   width: 60%;
   height: 10%;
-  font-size: 3.5vh;
+  font-size: 5vh;
+
+  font-family: "Comfortaa", cursive;
+  font-family: "Comic Neue", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Teko", sans-serif;
+  font-weight: bolder;
   font-weight: 700;
-  background-color: #ffffffaf;
+  background-color: #dac1a1;
   border-radius: 10%;
+  box-shadow: 5px 5px 5px black;
 }
 /* ajustes responsive tablet */
 @media (min-width: 768px) {
@@ -349,6 +365,16 @@
   .go-bot {
     right: -245px;
     margin-bottom: 40px;
+  }
+  #position-pl1 {
+    bottom: -80px;
+  }
+
+  #position-pl2 {
+    bottom: -360px;
+  }
+  .but-2 {
+    bottom: -300px;
   }
 }
 @media (min-width: 998px) {
@@ -413,5 +439,21 @@
   }
   .text-player {
     font-size: 7vh;
+  }
+  #position-pl1 {
+    bottom: -40px;
+  }
+
+  #position-pl2 {
+    bottom: -200px;
+  }
+  .winner-title {
+    font-size: 10vh;
+  }
+  .but-2 {
+    bottom: -150px;
+  }
+  .but2-style {
+    font-size: 6vh;
   }
 }
