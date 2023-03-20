@@ -303,7 +303,7 @@
 }
 .winner {
   width: 100%;
-  height: 100%;
+  height: 20%;
 }
 .winner-title {
   font-size: 6vh;
@@ -317,7 +317,7 @@
 }
 .gif-loser {
   width: 100%;
-  height: 100%;
+  height: 40%;
   background-size: cover;
 }
 
