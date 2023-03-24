@@ -345,6 +345,14 @@
   position: relative;
   bottom: -200px;
 }
+
+.btn {
+  width: 70%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
 .but2-style {
   width: 60%;
   height: 10%;
