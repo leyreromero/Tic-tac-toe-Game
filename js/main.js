@@ -12,7 +12,7 @@ const gameData = {
   winner: null,
 };
 
-const indexInfo = () => {
+const mainPageHTML = () => {
   return ` 
   <!--Cabecero-->
       <div class="top-case">
@@ -73,56 +73,66 @@ const indexInfo = () => {
             <div class="characters-img">
               <p class="text-info">PLAYER 1</p>
               <div class="char-container">
-                <img src="/images/pc.png" alt="pc" class="img-container" />
+                <img src="/images/pc.png" alt="pc" class="img-container" 
+                id="character1-pc"/>
                 <img
-                  src="/images/jack-sparrow.png"
+                  src="/images/jack.png"
                   alt="jack"
                   class="img-container"
+                  id="character1-jack"
                 />
                 <img
                   src="/images/elisabeth.png"
                   alt="elisabeth"
                   class="img-container"
+                  id="character1-elisabeth"
                 />
                 <img
-                  src="/images/davy-jones.png"
+                  src="/images/davy.png"
                   alt="davy"
                   class="img-container"
+                  id="character1-davy" 
                 />
                 <img
-                  src="/images/will-turner.png"
+                  src="/images/will.png"
                   alt="will"
                   class="img-container"
+                  id="character1-will"
                 />
               </div>
               <div class="characters-img">
                 <p class="text-info">PLAYER 2</p>
                 <div class="char-container">
-                  <img src="/images/pc.png" alt="pc" class="img-container" />
+                  <img src="/images/pc.png" alt="pc" class="img-container" 
+                  id="character2-pc"/>
                   <img
-                    src="/images/jack-sparrow.png"
+                    src="/images/jack.png"
                     alt="jack"
                     class="img-container"
+                    id="character2-jack"
                   />
                   <img
                     src="/images/elisabeth.png"
                     alt="elisabeth"
                     class="img-container"
+                    id="character2-elisabeth"
                   />
                   <img
-                    src="/images/davy-jones.png"
+                    src="/images/davy.png"
                     alt="davy"
                     class="img-container"
+                    id="character2-davy"
                   />
                   <img
-                    src="/images/will-turner.png"
+                    src="/images/will.png"
                     alt="will"
                     class="img-container"
+                    id="character2-will"
                   />
                 </div>
               </div>
             </div>
-            <button class="go-bot" id="but-go">
+            <button class="go-bot" id="go-button">
               GO!
             </button>
           </div>
@@ -131,19 +141,43 @@ const indexInfo = () => {
   `;
 };
 
-const indexEvents = () => {
-  document.getElementById("but-go").addEventListener("click", () => {
+const renderMainPageHTML = () => {
+  root.innerHTML = mainPageHTML();
+};
+
+const addListeners = () => {
+  addListenerToStartGame();
+  addFirstPlayerListeners();
+  addSecondPlayerListeners();
+};
+
+const addListenerToStartGame = () => {
+  document.getElementById("go-button").addEventListener("click", () => {
     renderGame();
     gameEvents();
   });
 };
 
-const renderIndexInfo = () => {
-  root.innerHTML = indexInfo();
+const addFirstPlayerListeners = () => {
+  const firstPlayerImages = document.querySelectorAll('[id^="character1"]');
+  firstPlayerImages.forEach((image) => {
+    image.addEventListener("click", (event) => {
+      gameData.player1.name = event.target.alt;
+    });
+  });
 };
 
-renderIndexInfo();
-indexEvents();
+const addSecondPlayerListeners = () => {
+  const secondPlayerImages = document.querySelectorAll('[id^="character2"]');
+  secondPlayerImages.forEach((image) => {
+    image.addEventListener("click", (event) => {
+      gameData.player2.name = event.target.alt;
+    });
+  });
+};
+
+renderMainPageHTML();
+addListeners();
 
 // modal
 var modal = document.getElementById("myModal-play");

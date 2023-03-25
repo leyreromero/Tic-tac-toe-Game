@@ -214,6 +214,9 @@
 .img-container:hover {
   border: 2px solid white;
 }
+.selectedImage {
+  border: 2px solid white;
+}
 
 .go-bot {
   width: 25%;

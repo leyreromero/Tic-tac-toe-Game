@@ -13,12 +13,12 @@ const secondInfo = () => {
         <div class="player-1">
           <div class="info-player1">
             <h1 class="text-player" id="case-2">
-              <img
-                src="../images/elisabeth.png"
-                alt="elisabeth"
-                class="img-container"
-              />
-              ELISABETH
+            <div id="firstPlayer">${gameData.player1.name}</div>
+            <img
+              src="../images/${gameData.player1.name}.png"
+              alt="${gameData.player1.name}"
+              class="img-container"
+            />
             </h1>
           </div>
         </div>
@@ -52,10 +52,10 @@ const secondInfo = () => {
         <div class="player-2">
           <div class="info-player1">
             <h1 class="text-player" id="case-2">
-              ELISABETH
+            <div id="secondPlayer">${gameData.player2.name}</div>
               <img
-                src="../images/elisabeth.png"
-                alt="elisabeth"
+                src="../images/${gameData.player2.name}.png"
+                alt="${gameData.player2.name}"
                 class="img-container"
               />
             </h1>
@@ -77,7 +77,7 @@ const clickGame = (x) => {
       element.innerHTML = `<img src="../images/moneda.png" class="moneda" alt="moneda" />`;
       mapCasillas[element.id] = "y";
     } else {
-      element.innerHTML = `<img src="../images/moneda.png" class="moneda" alt="moneda" />`;
+      element.innerHTML = `<img src="../images/calavera.png" class="moneda" alt="moneda" />`;
       mapCasillas[element.id] = "x";
     }
     turn = !turn;
@@ -86,17 +86,15 @@ const clickGame = (x) => {
   checkPlay();
 };
 
-
-const checkPlay = (c)=> {
-    if (c == 1) {
-        renderWinner();
-        winnerEvents();
-    } else {
-        renderWinner();
-        winnerEvents();
-    }
-
-}
+const checkPlay = (c) => {
+  if (c == 1) {
+    renderWinner();
+    winnerEvents();
+  } else {
+    renderWinner();
+    winnerEvents();
+  }
+};
 
 const gameEvents = () => {
   const casillas = document.querySelectorAll(".col-board");
