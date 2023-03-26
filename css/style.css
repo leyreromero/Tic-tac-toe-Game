@@ -283,8 +283,8 @@
   justify-content: center;
 }
 .col-board {
-  width: 30%;
-  height: 75%;
+  width: 100px;
+  height: 110px;
   margin: 15px;
   background-color: #dac1a169;
   display: flex;
@@ -442,6 +442,11 @@
   .case-1 {
     display: flex;
     height: 100vh;
+  }
+  .col-board {
+    width: 30%;
+    height: 75%;
+   
   }
   .fila {
     height: 25%;
