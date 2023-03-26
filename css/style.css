@@ -214,6 +214,8 @@
   border: 2px solid white;
 }
 .selectedImage {
+  height: 15%;
+  width: 15%;
   border: 2px solid white;
 }
 
@@ -446,7 +448,6 @@
   .col-board {
     width: 30%;
     height: 75%;
-   
   }
   .fila {
     height: 25%;

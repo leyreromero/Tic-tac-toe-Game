@@ -163,6 +163,8 @@ const addFirstPlayerListeners = () => {
   firstPlayerImages.forEach((image) => {
     image.addEventListener("click", (event) => {
       gameData.player1.name = event.target.alt;
+      image.classList.add("selectedImage");
+      image.classList.remove("img-container");
     });
   });
 };
@@ -172,6 +174,8 @@ const addSecondPlayerListeners = () => {
   secondPlayerImages.forEach((image) => {
     image.addEventListener("click", (event) => {
       gameData.player2.name = event.target.alt;
+      image.classList.add("selectedImage");
+      image.classList.remove("img-container");
     });
   });
 };
