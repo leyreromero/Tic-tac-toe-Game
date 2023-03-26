@@ -56,7 +56,7 @@ const renderGame = () => {
   root.innerHTML = secondInfo();
 };
 
-const showWinner = () => {
+const showWinner = (playerTurn) => {
   if (playerTurn == "y") {
     gameData.winner = gameData.player1.name;
     renderWinner();
@@ -87,49 +87,49 @@ const checkPlay = (playerTurn, winnerArray) => {
     winnerArray[1] == playerTurn &&
     winnerArray[2] == playerTurn
   ) {
-    showWinner();
+    showWinner(playerTurn);
   } else if (
     winnerArray[3] == playerTurn &&
     winnerArray[4] == playerTurn &&
     winnerArray[5] == playerTurn
   ) {
-    showWinner();
+    showWinner(playerTurn);
   } else if (
     winnerArray[6] == playerTurn &&
     winnerArray[7] == playerTurn &&
     winnerArray[8] == playerTurn
   ) {
-    showWinner();
+    showWinner(playerTurn);
   } else if (
     winnerArray[0] == playerTurn &&
     winnerArray[3] == playerTurn &&
     winnerArray[6] == playerTurn
   ) {
-    showWinner();
+    showWinner(playerTurn);
   } else if (
     winnerArray[1] == playerTurn &&
     winnerArray[4] == playerTurn &&
     winnerArray[7] == playerTurn
   ) {
-    showWinner();
+    showWinner(playerTurn);
   } else if (
     winnerArray[2] == playerTurn &&
     winnerArray[5] == playerTurn &&
     winnerArray[8] == playerTurn
   ) {
-    showWinner();
+    showWinner(playerTurn);
   } else if (
     winnerArray[0] == playerTurn &&
     winnerArray[4] == playerTurn &&
     winnerArray[8] == playerTurn
   ) {
-    showWinner();
+    showWinner(playerTurn);
   } else if (
     winnerArray[2] == playerTurn &&
     winnerArray[4] == playerTurn &&
     winnerArray[6] == playerTurn
   ) {
-    showWinner();
+    showWinner(playerTurn);
   } else if (fullBoard(winnerArray)) {
     renderDraw();
     drawEvents();
