@@ -59,5 +59,5 @@ const drawHtml = () => {
 const renderDraw = () => {
   root.classList.remove("my-container");
   root.classList.add("my-container2");
-  root.innerHTML = winnerData();
+  root.innerHTML = drawHtml();
 };

@@ -152,7 +152,6 @@
   padding: 3%;
 }
 
-/* modal box */
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -231,6 +230,7 @@
   margin-bottom: 10px;
 }
 /* pantalla juego */
+
 .my-container {
   background-image: url(/images/peakpx.jpg);
   background-size: cover;
