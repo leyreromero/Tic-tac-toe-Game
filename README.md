@@ -26,3 +26,4 @@ To preview the demo <a href="https://leyreromero.github.io/tic-tac-toe/" > tap h
 <img src="./images/capt2.png"  alt="preview console started" width="300" heigth="500">
 <img src="./images/capt3.png"  alt="preview console started" width="300" heigth="500">
 <img src="./images/capt4.png"  alt="preview console started" width="300" heigth="500">
+<img src="./images/capt5.png"  alt="preview console started" width="300" heigth="500">
