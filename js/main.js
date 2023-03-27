@@ -141,6 +141,7 @@ const mainPageHTML = () => {
   `;
 };
 
+
 const renderMainPageHTML = () => {
   root.innerHTML = mainPageHTML();
 };

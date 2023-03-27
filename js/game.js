@@ -142,7 +142,6 @@ const gameEvents = () => {
   const casillas = document.querySelectorAll(".col-board");
 
   const clickGame = (element) => {
-    console.log(element);
     if (element.innerHTML != " ") return;
 
     if (turn) {
@@ -153,7 +152,6 @@ const gameEvents = () => {
       mapCasillas[element.id] = "x";
     }
     turn = !turn;
-    console.log(mapCasillas);
     checkPlay(mapCasillas[element.id], mapCasillas);
   };
 
