@@ -3,7 +3,7 @@ const secondInfo = () => {
     <!--Estructura juego-->
       <!--Cabecero-->
       <div class="top-case">
-        <img src="../images/logo.png" class="imageLogo" />
+        <img src="images/logo.png" class="imageLogo" />
       </div>
       <div class="case-1">
         <div class="player-1">
@@ -11,7 +11,7 @@ const secondInfo = () => {
             <h1 class="text-player" id="case-2">
             <div id="firstPlayer">${gameData.player1.name}</div>
             <img
-              src="../images/${gameData.player1.name}.png"
+              src="images/${gameData.player1.name}.png"
               alt="${gameData.player1.name}"
               class="img-container"
             />
@@ -40,7 +40,7 @@ const secondInfo = () => {
             <h1 class="text-player" id="case-2">
             <div id="secondPlayer">${gameData.player2.name}</div>
               <img
-                src="../images/${gameData.player2.name}.png"
+                src="images/${gameData.player2.name}.png"
                 alt="${gameData.player2.name}"
                 class="img-container"
               />
@@ -145,10 +145,10 @@ const gameEvents = () => {
     if (element.innerHTML != " ") return;
 
     if (turn) {
-      element.innerHTML = `<img src="../images/moneda.png" class="moneda" alt="moneda" />`;
+      element.innerHTML = `<img src="images/moneda.png" class="moneda" alt="moneda" />`;
       mapCasillas[element.id] = "y";
     } else {
-      element.innerHTML = `<img src="../images/calavera.png" class="moneda" alt="calavera" />`;
+      element.innerHTML = `<img src="images/calavera.png" class="moneda" alt="calavera" />`;
       mapCasillas[element.id] = "x";
     }
     turn = !turn;
