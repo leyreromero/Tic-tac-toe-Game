@@ -73,28 +73,28 @@ const mainPageHTML = () => {
             <div class="characters-img">
               <p class="text-info">PLAYER 1</p>
               <div class="char-container">
-                <img src="/images/pc.png" alt="Pc" class="img-container" 
+                <img src="../images/pc.png" alt="Pc" class="img-container" 
                 id="character1-pc"/>
                 <img
-                  src="/images/jack.png"
+                  src="../images/jack.png"
                   alt="Jack"
                   class="img-container"
                   id="character1-jack"
                 />
                 <img
-                  src="/images/elisabeth.png"
+                  src="../images/elisabeth.png"
                   alt="Elisabeth"
                   class="img-container"
                   id="character1-elisabeth"
                 />
                 <img
-                  src="/images/davy.png"
+                  src="../images/davy.png"
                   alt="Davy"
                   class="img-container"
                   id="character1-davy" 
                 />
                 <img
-                  src="/images/will.png"
+                  src="../images/will.png"
                   alt="Will"
                   class="img-container"
                   id="character1-will"
@@ -103,28 +103,28 @@ const mainPageHTML = () => {
               <div class="characters-img">
                 <p class="text-info">PLAYER 2</p>
                 <div class="char-container">
-                  <img src="/images/pc.png" alt="Pc" class="img-container" 
+                  <img src="../images/pc.png" alt="Pc" class="img-container" 
                   id="character2-pc"/>
                   <img
-                    src="/images/jack.png"
+                    src="../images/jack.png"
                     alt="Jack"
                     class="img-container"
                     id="character2-jack"
                   />
                   <img
-                    src="/images/elisabeth.png"
+                    src="../images/elisabeth.png"
                     alt="Elisabeth"
                     class="img-container"
                     id="character2-elisabeth"
                   />
                   <img
-                    src="/images/davy.png"
+                    src="../images/davy.png"
                     alt="Davy"
                     class="img-container"
                     id="character2-davy"
                   />
                   <img
-                    src="/images/will.png"
+                    src="../images/will.png"
                     alt="Will"
                     class="img-container"
                     id="character2-will"
